@@ -28,6 +28,35 @@ addDeposit.addEventListener('click',function(){
    document.getElementById('depositAmount').value='';
 })
 
+// --------------widthdro sectioon---------------
+var widthdrobtn = document.getElementById('widthdrobtn');
+
+widthdrobtn.addEventListener('click',function(){
+var widthdroBlance = document.getElementById('widthdroBlance').innerText;
+ widthdroBlance = parseFloat(widthdroBlance);
+
+ var widthAmount = document.getElementById('widthAmount').value;
+ widthAmount = parseFloat(widthAmount);
+
+ var totalWidthdrow = widthAmount + widthdroBlance;
+ document.getElementById('widthdroBlance').innerText=totalWidthdrow;
+
+ var carretBalance = document.getElementById('carretBalance').innerText;
+ carretBalance = parseFloat(carretBalance );
+  
+ var wcb = carretBalance-widthAmount;
+ console.log(wcb);
+
+ document.getElementById('carretBalance').innerText=wcb;
+
+
+ document.getElementById('widthAmount').value='';
+
+
+
+
+
+})
 
 function calculation(id,depositeAmount){
 
