@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+     <title>Prime bank desine</title>
+ </head>
+ <body>
+    
+     <div class="login-area" id="loginArea">
+        <h1 class="text-center">wellcome to prime bank limeted</h1>
+        <form action="">
+            <input class="form-control" type="text" placeholder="Email"> <br>
+            <input class="form-control" type="password" placeholder="Password"> <br>
+            <button class="btn btn-success " id="firstEnter">Enter</button>
+        </form>
+     </div>
+
+
+
+     <div class="mane-area ">
+         <div class="row">
+             <div class="col-md-4">
+                 <div class="bg-danger p-">
+                     <h4 class="mt-5"  >Deposie</h4>
+                     <h1>$ <span id="depositeTotal">20</span> </h1>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="bg-success p-3s">
+                     <h4 class="mt-5"  >Widthdrow</h4>
+                     <h1>$500</h1>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="bg-danger">
+                     <h4 class="mt-5"  >Balance</h4>
+                     <h1>$ <span id="carretBalance">200</span></h1>
+                 </div>
+             </div>
+         </div>
+
+         <div class="row">
+             <div class="col-md-6">
+                 <div class="submit-area">
+                    <h4>Deposie</h4> 
+                    <input class="form-control" type="number" id="depositAmount"> <br>
+                    <button class="btn btn-success" id="addDeposit">Deposie</button>
+                 </div>
+             </div>
+             <div class="col-md-6">
+                 <div class="submit-area">
+                    <h4>Widthdrow</h4> 
+                    <input class="form-control" type="number"> <br>
+                    <button class="btn btn-success">Deposie</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+    
+  
+  <script src="script.js"></script>
+ </body>
+ </html>
